@@ -42,7 +42,7 @@ h1, h2, h3 {
 }
 
 .breadcrumb a{
-    color: var(--text-secondary);
+    color: var(--brand);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -295,8 +295,8 @@ h1, h2, h3 {
 /* Politica de Privacidad */
 
 .policy{
-    padding: 60px 0;
-    max-width: 900px;
+    padding: 60px 20px;
+    max-width: 1000px;
 }
 
 .policy-header{
