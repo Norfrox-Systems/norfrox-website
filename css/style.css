@@ -34,9 +34,35 @@ h1, h2, h3 {
     padding: 0 20px;
 }
 
+.breadcrumb{
+    font-size: 14px;
+    margin-bottom: 24px;
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+.breadcrumb a{
+    color: var(--brand);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover{
+    color: var(--brand);
+}
+
+.breadcrumb span{
+    margin: 0 6px;
+}
+
 @media (max-width: 768px){
     .container{
         padding: 0 16px;
+    }
+
+    .breadcrumb{
+        font-size: 13px;
+        margin-bottom: 16px;
     }
 }
 
@@ -265,3 +291,89 @@ h1, h2, h3 {
 }
 
 /* Footer End */
+
+/* Politica de Privacidad */
+
+.policy{
+    padding: 60px 20px;
+    max-width: 1000px;
+}
+
+.policy-header{
+    margin-bottom: 40px;
+}
+
+.policy h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.policy h2{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: var(--text);
+}
+
+.policy ul{
+    margin: 10px 0 20px 20px;
+    color: var(--text-secondary);
+}
+
+.policy li{
+    margin-bottom: 8px;
+}
+
+.policy a{
+    color: var(--brand);
+    text-decoration: none;
+}
+
+.policy p{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.policy a:hover{
+    text-decoration: underline;
+}
+
+.policy section{
+    margin-bottom: 30px;
+}
+
+.policy-date{
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px){
+    .policy{
+        padding: 40px;
+        max-width: 100%;
+    }
+
+    .policy h1{
+        font-size: 26px;
+    }
+
+    .policy h2{
+        font-size: 20px;
+    }
+
+    .policy ul{
+        margin-left: 16px;
+    }
+
+    .policy p, .policy li{
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .policy section{
+        margin-bottom: 24px;
+    }
+}
+
+/* politica de Privacidad End */
