@@ -64,6 +64,10 @@ h1, h2, h3 {
     border-top: 1px solid var(--border);
 }
 
+.fadeup-animation{
+    animation: fadeUp 0.8s ease forwards;
+}
+
 @media (max-width: 768px){
     .container{
         padding: 0 16px;
