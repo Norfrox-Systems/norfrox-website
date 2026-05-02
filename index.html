@@ -8,11 +8,20 @@
     <meta name="keywords" content="desarrollo web, desarrollo de software, mantenimiento web, soporte tecnico">
     <meta name="author" content="Norfrox">
 
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/icons/android-chrome-512x512.png">
+    <link rel="manifest" href="/assets/icons/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css?v=1.19">
+    <link rel="stylesheet" href="css/style.css?v=1.22">
 
-    <title>Norfrox</title>
+    <title>Norfrox - Desarrollo Web y Software en México</title>
 </head>
 <body>
     
@@ -53,11 +62,130 @@
 
     </header>
 
-    <main class="container container-spacer">
+    <main>
 
-        <nav class="breadcrumb" aria-label="breadcrumb">
-            <a href="/">Inicio</a>
-        </nav>
+        <section class="hero-home">
+            <div class="hero-overlay"></div>
+            
+            <div class="container container-spacer hero-content">
+
+                <nav class="breadcrumb" aria-label="breadcrumb">
+                    <a href="/">Inicio</a>
+                </nav>
+
+                <div class="hero-text fadeup-animation">
+
+                    <span class="hero-eyebrow">Soluciones tecnologicas para empresas</span>
+
+                    <h1>
+                        Desarrollo Web y Software
+                        diseñado para hacer crecer tu negocio
+                    </h1>
+
+                    <p>
+                        Desarrollamos sitios web, software a medida y sistemas empresariales 
+                        seguros, escalables y optimizados para impulsar la operacion de tu empresa.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="/contacto" class="btn-primary">Solicitar Cotizacion</a>
+                        <a href="/servicios" class="btn-secondary">Ver servicios</a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <span>Desarrollo profesional</span>
+                        <span>•</span>
+                        <span>Infraestructura segura</span>
+                        <span>•</span>
+                        <span>Soporte especializado</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="home-services container container-spacer fadeup-animation">
+
+            <div class="services-intro">
+                <span class="section-tag">Servicios</span>
+                <h2>Soluciones diseñadas para impulsar tu negocio</h2>
+                <p>
+                    Desarrollamos tecnologia enfocada en rendimiento, escalabilidad y resultados reales.
+                </p>
+            </div>
+
+            <div class="services-stack">
+
+                <article class="service-panel">
+                    <span class="service-number">01</span>
+                    <div class="service-body">
+                        <h3>Desarrollo Web</h3>
+                        <p>
+                            Sitios web modernos, rápidos y optimizados para convertir visitas en oportunidades.
+                        </p>
+                        <ul>
+                            <li>Diseño responsivo</li>
+                            <li>SEO tecnico</li>
+                            <li>Alto rendimiento</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-panel">
+                    <span class="service-number">02</span>
+                    <div class="service-body">
+                        <h3>Software a Medida</h3>
+                        <p>
+                            Soluciones personalizadas para automatizar procesos y mejorar la operación.
+                        </p>
+                        <ul>
+                            <li>Adaptado a tu negocio</li>
+                            <li>Automatización</li>
+                            <li>Escalable y flexible</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-panel">
+                    <span class="service-number">03</span>
+                    <div class="service-body">
+                        <h3>Sistemas Empresariales</h3>
+                        <p>
+                            Plataformas robustas para centralizar procesos, información y control.
+                        </p>
+                        <ul>
+                            <li>Gestión centralizada</li>
+                            <li>Mayor eficiencia</li>
+                            <li>Escalabilidad</li>
+                        </ul>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="services-cta">
+                <a href="/servicios" class="btn-secondary">Explorar todos los servicios</a>
+            </div>
+
+        </section>
+
+        <section class="benefits container container-spacer fadeup-animation">
+            <div class="benefits-content">
+                <h2>¿Por qué elegirnos?</h2>
+                <p class="benefits-main">
+                    Construimos soluciones tecnologicas, confiebles, seguras y 
+                    diseñadas para crecer con tu empresa.
+                </p>
+
+                <p class="benefits-sub">
+                    Nos enfocamos en calidad, rendimiento y atencion personalizada 
+                    para garantizar resultados reales en cada proyecto.
+                </p>
+
+            </div>
+        </section>
 
     </main>
 
@@ -87,7 +215,7 @@
             class="whatsapp-float"
             target="_blank"
             aria-label="Chat en WhatsApp">
-            <svg xmls="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <path fill="white" d="M16 .396C7.163.396 0 7.558 0 16.396c0 2.89.76 5.6 2.086 7.945L0 32l7.84-2.056A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16.004C32 7.558 24.837.396 16 .396zm0 29.272a13.21 13.21 0 01-6.725-1.835l-.482-.287-4.653 1.22 1.24-4.54-.314-.468a13.16 13.16 0 01-2.02-7.063c0-7.292 5.93-13.222 13.22-13.222 7.29 0 13.22 5.93 13.22 13.222 0 7.292-5.93 13.222-13.22 13.222zm7.29-9.894c-.4-.2-2.366-1.166-2.732-1.3-.366-.134-.634-.2-.902.2-.268.4-1.036 1.3-1.27 1.566-.234.268-.468.3-.868.1-.4-.2-1.688-.622-3.214-1.984-1.188-1.06-1.99-2.37-2.222-2.77-.234-.4-.024-.616.176-.816.18-.178.4-.468.6-.702.2-.234.268-.4.4-.668.134-.268.066-.5-.034-.7-.1-.2-.902-2.168-1.236-2.968-.326-.782-.658-.676-.902-.688l-.768-.014c-.268 0-.7.1-1.068.5s-1.4 1.366-1.4 3.332c0 1.966 1.434 3.868 1.634 4.134.2.268 2.822 4.31 6.834 6.038.954.41 1.698.656 2.278.84.958.304 1.83.262 2.52.16.768-.114 2.366-.966 2.7-1.9.334-.934.334-1.734.234-1.9-.1-.166-.366-.268-.768-.468z"/>
             </svg>
         </a>
