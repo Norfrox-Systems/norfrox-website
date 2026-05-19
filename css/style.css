@@ -1769,8 +1769,8 @@ h1, h2, h3 {
     }
 
     .contact-actions{
-        flex-direction: column;
-        align-items: flex-start;
+        display: flex;
+        justify-content: center;
     }
 
     .contact-right img{
