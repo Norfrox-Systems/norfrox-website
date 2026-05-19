@@ -2109,19 +2109,20 @@ h1, h2, h3 {
 }
 
 .principles-header{
-    text-align: center;
+    text-align: left;
     max-width: 700px;
-    margin: 0 auto 50px;
+    margin: 0 0 50px;
 }
 
 .principles-header h2{
     font-size: 30px;
-    margin-bottom: 10px
+    margin-bottom: 14px;
 }
 
 .principles-header p{
     color: var(--text-secondary);
-    line-height: 1.7 ;
+    line-height: 1.7;
+    max-width: 700px;
 }
 
 .principles-grid{
@@ -2131,35 +2132,110 @@ h1, h2, h3 {
 }
 
 .principle-card{
-    background: var(--bg-secondary);
+    position: relative;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.015),
+            rgba(255,255,255,.01)
+        ),
+        var(--bg-secondary);
+
     border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 25px;
+    border-radius: 18px;
+
+    padding: 28px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 140px;
-    transition: all 0.3 ease;
+
+    min-height: 160px;
+
+    overflow: hidden;
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
 }
 
-.principle-card::before:hover{
+.principle-card::before{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        var(--brand),
+        transparent
+    );
+
+    opacity: .8;
+}
+
+.principle-card::after{
+    content: "";
+
+    position: absolute;
+    top: -60px;
+    right: -60px;
+
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+
+    background: rgba(77, 163, 255, 0.014);
+
+    filter: blur(10px);
+
+    transition: transform .35s ease;
 }
 
 .principle-card:hover{
-    border-color: var(--brand);
-    transform: translateY(-3px);    
+    border-color: rgba(77,163,255,.35);
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.18);
+}
+
+.principle-card:hover::after{
+    transform: scale(1.08);
 }
 
 .principle-card h3{
+    position: relative;
+    z-index: 2;
+
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
+
+    line-height: 1.35;
 }
 
 .principle-card p{
+    position: relative;
+    z-index: 2;
+
     color: var(--text-secondary);
+
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.75;
+
+    text-align: justify;
+
+    padding-top: 14px;
+
+    border-top: 1px solid rgba(255,255,255,.06);
 }
 
 .cta{
@@ -2239,6 +2315,11 @@ h1, h2, h3 {
 
     .principles-grid{
         grid-template-columns: 1fr;
+    }
+
+    .principle-card{
+        padding: 24px;
+        min-height: auto;
     }
 
     .principles-header h2{
